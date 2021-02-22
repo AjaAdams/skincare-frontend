@@ -2,8 +2,10 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Products from '../views/Products.vue'
-import ProductShow from '../views/ProductShow'
-import Login from '../views/Login'
+import ProductShow from '../views/ProductShow.vue'
+import Login from '../views/Login.vue'
+import Logout from '../views/Logout.vue'
+import SignUp from '../views/SignUp.vue'
 
 Vue.use(VueRouter)
 
@@ -35,6 +37,16 @@ const routes = [
     path: '/login',
     name: 'login',
     component: Login
+  },
+  {
+    path: '/logout',
+    name: 'logout',
+    component: Logout
+  },
+  {
+    path: '/signup',
+    name: 'signup',
+    component: SignUp
   }
 ]
 
